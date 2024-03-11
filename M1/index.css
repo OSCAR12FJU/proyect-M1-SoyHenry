@@ -1,0 +1,308 @@
+:root{
+    --color-fondo:#E5E5E5;
+    --color-primary:#003492;
+    --color-second:#02236D;
+    --texto-encabezados: #ffff;
+    --texto-parrafos: #ffff;
+    --color-especiality: #e4aa16;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color: var(--color-fondo);
+}
+h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color:var(--texto-encabezados);
+}
+h2{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 27px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+header{
+    text-align: center;
+    
+}
+nav {
+    background-color: var(--color-primary);
+    padding: 1em;
+    display: flex;
+    align-items: center;   
+}
+.contain-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-content{
+    width: 80%;
+    margin:0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subnav{
+    background-color: var(--color-second);
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+.subnav-content{
+    width: 80%;
+    margin:0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i{
+    font-size: 20px;
+    color: var(--color-especiality);
+    padding-left: 8px;
+}
+    
+nav img {
+    max-height: 60px;
+    margin-right: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px; /* Espacio entre cada elemento de navegación */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.seccion{
+    width: 80%;
+    margin: 5em auto;
+
+    background-color: #f0f0f0;
+    padding: 20px; 
+    box-sizing: border-box; 
+    border-radius: 10px;
+}
+
+.quien-soy {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent),linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent), url("https://i.pinimg.com/originals/a3/47/8b/a3478b9e329b2ead69cbdb05170f4361.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quien-soy-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    background-image: linear-gradient(to top, rgba(0, 52, 146, 0.7), transparent), linear-gradient(to bottom, rgba(0, 52, 146, 0.7), transparent);
+    padding: 20px;
+    border-radius: 10px;
+} 
+.quien-soy h1{
+    padding-bottom: 15px;
+}
+
+.tecnologias{
+    width: 80%;
+    margin: 5em auto;
+    background-color: #f0f0f0;
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.contain-lenguajes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+}
+.lenguajes{
+    margin: 10px ;
+    text-align: center;
+
+}
+
+.tecnologias h2{
+    color: var(--color-second);
+    font-size: 35px;
+}
+.tecnologias h3{
+    color: var(--color-primary);
+}
+.actividades h2{
+    color: var(--color-second);
+    font-size: 35px;
+}
+.seccion.actividades{
+    text-align: center;
+}
+#mi-form{
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+#mi-form input, 
+#mi-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1.5px solid var(--color-primary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+#mi-form input:focus , 
+#mi-form textarea:focus{
+    border: 1.5px solid var(--color-primary)!;
+}
+#mi-form input::placeholder,
+#mi-form textarea::placeholder{
+    color: var(--color-primary);
+}
+
+#mi-form button{
+    background-color: var(--color-especiality);
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+#actividadContainer{
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.activ-contain{
+    width: calc(33.33% - 20px);
+    max-width: 26%;
+    box-sizing: border-box;
+    border: 1px solid #0000;
+    text-align: center;
+    margin: 20px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+.actividad-inner{
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 10px 20px;
+}
+
+.activ-contain img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.activ-contain h3{
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+/* FOOTER */
+
+.subFooter{
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    background-color: var(--color-second);
+    padding: 1em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    height: 30vh;
+}
+.contain-footer{
+    width: 80%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contain-copy{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.footer-icon i{
+    padding-right: 10px;
+    font-size: 22px;
+}
+.footer-icon p{
+    font-weight: 600;
+    font-size: 18px;
+}
